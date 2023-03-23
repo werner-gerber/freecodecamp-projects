@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <h1 id="title"> Survey Form</h1>
+   <p id="description"> With this survey I will collect some data so I know where you come from and how old you are. Filling out this survey would help me a lot. So thanx in advance.</p>
+<form id="survey-form">
+<fieldset>
+  <label id="name-label">Enter Your First Name: <input id="name" name="name" type="text" placeholder="your name"required ></label>
+  <label id="country-label">From which Country do you come from? <input id="country" name="country" type="text" placeholder="your country"required ></label>
+  <label id="email-label">Enter Your Email: <input id="email" name="email" type="email" required placeholder="your email address"bel>
+  <label id="number-label">Input your age (years): <input id="number" type="number" name="number" min="11" max="99" placeholder="your age" pattern="[0-9]" required></label>
+</fieldset>
+<fieldset> <label for="male-gender"><input id="male-gender" type="radio" name="gender-type" class="inline" value="male">Male </label>
+        <label for="female-gender"><input id="female-gender" type="radio" name="gender-type" class="inline" value="female"> Female</label></fieldset>
+<fieldset><label for="likes">What do you like to do the most?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Coding in HTML</option>
+            <option value="2">Developing a website</option>
+            <option value="3">Learning to become a full stack developer</option>
+            <option value="4">Other</option>
+          </select>
+        </label></fieldset>
+<fieldset> <label for="summer-type"><input id="summer-type" type="checkbox" name="summer-type" class="inline" value="summer" /> Summer Person</label>
+        <label for="winter-type"><input id="winter-type" type="checkbox" name="winter-type" class="inline" value="summer" /> Winter Person</label></fieldset>
+<fieldset>
+   <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="tell something about yourself"></textarea>
+        </label>
+</fieldset>
+  <input type="submit" id="submit" value="Submit">
+</form>
+</body>
+</html>
+
